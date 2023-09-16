@@ -1,23 +1,3 @@
-class GameSystem {
-  start() {}
-
-  choose() {}
-
-  draw() {}
-
-  win() {
-    // 1勝
-  }
-
-  victory() {
-    //game clear
-  }
-
-  lose() {}
-
-  gameOver() {}
-}
-
 const RSP = {
   1: "rock",
   2: "scissors",
@@ -161,15 +141,6 @@ class Colider {
       end: this.position.y + this.size.y,
     };
   }
-
-  // isCollision(targetColider) {
-  //   return (
-  //     this.width.start <= targetColider.width.start ||
-  //     this.width.end >= targetColider.width.end ||
-  //     this.height.start <= targetColider.height.start ||
-  //     this.height.end >= targetColider.height.end
-  //   );
-  // }
 }
 
 class GameObject {
@@ -274,10 +245,3 @@ world.start(
   world.gameObjectList[1],
   world.gameObjectList[2]
 );
-
-// 残りやること
-// 画像の反転処理
-// クリック判定
-// 勝敗判定
-// 勝敗演出
-// 連続してゲームを遊べる仕組み
